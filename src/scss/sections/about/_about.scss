@@ -1,5 +1,9 @@
 $img-offset: 15px;
 
+.about_highlight_text {
+    color: darkorange; /* Replace 'blue' with your desired color */
+}
+
 .about__grid {
     display: grid;
     grid-template-columns: 1fr;
