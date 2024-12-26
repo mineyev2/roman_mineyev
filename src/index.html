@@ -85,6 +85,9 @@
                             <a class="navigation__link" href="#blog">Projects</a>
                         </li>
                         <li class="navigation__item">
+                            <a class="navigation__link" href="#publications">Publications</a>
+                        </li>
+                        <li class="navigation__item">
                             <a class="navigation__link" href="#about">About</a>
                         </li>
                         <li class="navigation__item">
@@ -204,7 +207,7 @@
                         <label for="dark-theme-control" class="switch__label">
                             <strong>Dark theme</strong>
                         </label>
-                        <button id="dark-theme-control" class="switch__button" role="switch" aria-checked="true">
+                        <button id="dark-theme-control" class="switch__button" role="switch" aria-checked="false">
                             <span class="switch__button-text--on">on</span>
                             <span class="switch__button-text--off">off</span>
                             <span class="switch__button-key"></span>
@@ -305,7 +308,7 @@
             <section id="blog" class="section" tabindex="-1">
                 <div class="container">
                     <header class="section__header fade-up-start" data-gc="fade-up">
-                        <h2>Projects and Publications</h2>
+                        <h2>Projects</h2>
                         <div class="line line--horizontal line--heading" aria-hidden="true"></div>
                         <!-- <p class="section__header-p">Here are a list of some of the projects that I have worked on.</p> -->
                     </header>
@@ -315,11 +318,11 @@
                             <div class="position-relative">
                                 <a class="blog-post__img-link" href="#blog">
                                     <img loading="lazy" class="blog-post__img img-fluid lazyload"
-                                        data-src="./assets/blog/STL_MLD.png" alt="Banana over pink background">
+                                        data-src="./assets/blog/STL_MLD.png" alt="STL-MLD">
                                 </a>
                                 <header class="blog-post__header">
                                     <h3 class="blog-post__title heading-4">
-                                        <a href="#blog">STL_MLD: Optimization-Based Task and Motion Planner for Bipedal Robots</a>
+                                        <a href="#blog">STL-MLD: Optimization-Based Task and Motion Planner for Bipedal Robots</a>
                                     </h3>
                                     <div class="blog-post__author">
                                         <div class="heading-5">
@@ -349,13 +352,13 @@
                         <article class="blog-post fade-up-start" data-gc="fade-up">
                             <span class="blog-post__surface"></span>
                             <div class="position-relative">
-                                <a class="blog-post__img-link" href="#blog">
+                                <a class="blog-post__img-link" href="https://ieeexplore.ieee.org/document/10597443" target="_blank">
                                     <img loading="lazy" class="blog-post__img img-fluid lazyload"
-                                        data-src="./assets/blog/door_opening.png" alt="Banana over pink background">
+                                        data-src="./assets/blog/door_opening.png" alt="Autonomous Door-Opening">
                                 </a>
                                 <header class="blog-post__header">
                                     <h3 class="blog-post__title heading-4">
-                                        <a href="#blog">Autonomous Door-Opening with a Dual-Arm Robot</a>
+                                        <a href="https://ieeexplore.ieee.org/document/10597443" target="_blank">Autonomous Door-Opening with a Dual-Arm Robot</a>
                                     </h3>
                                     <div class="blog-post__author">
                                         <div class="heading-5">
@@ -375,7 +378,7 @@
                                 </div>
                             </div>
                             <footer class="blog-post__footer">
-                                <a class="blog-post__read-more" href="#blog">
+                                <a class="blog-post__read-more" href="https://ieeexplore.ieee.org/document/10597443" target="_blank">
                                     <span aria-hidden="true">Read more</span>
                                     <span class="sr-only">Read more about: Autonomous Door-Opening</span>
                                 </a>
@@ -384,13 +387,13 @@
                         <article class="blog-post fade-up-start" data-gc="fade-up">
                             <span class="blog-post__surface"></span>
                             <div class="position-relative">
-                                <a class="blog-post__img-link" href="#blog">
+                                <a class="blog-post__img-link" href="https://ieeexplore.ieee.org/document/10375209" target="_blank">
                                     <img loading="lazy" class="blog-post__img img-fluid lazyload"
                                         data-src="./assets/blog/autonomous_chess.png" alt="Banana over pink background">
                                 </a>
                                 <header class="blog-post__header">
                                     <h3 class="blog-post__title heading-4">
-                                        <a href="#blog">Exploring the Capabilities of a
+                                        <a href="https://ieeexplore.ieee.org/document/10375209" target="_blank">Exploring the Capabilities of a
                                             General-Purpose Robotic Arm in Chess Gameplay</a>
                                     </h3>
                                     <div class="blog-post__author">
@@ -411,7 +414,7 @@
                                 </div>
                             </div>
                             <footer class="blog-post__footer">
-                                <a class="blog-post__read-more" href="#blog">
+                                <a class="blog-post__read-more" href="https://ieeexplore.ieee.org/document/10375209" target="_blank">
                                     <span aria-hidden="true">Read more</span>
                                     <span class="sr-only">Read more about: Autonomous Chess Gameplay</span>
                                 </a>
@@ -673,6 +676,89 @@
                 </div>
             </section>
             <!-- END BLOG SECTION -->
+            <!-- PUBLICATION SECTION -->
+            <section id="publications" class="section" tabindex="-1">
+                <div class="container">
+                    <header class="section__header fade-up-start" data-gc="fade-up">
+                        <h2> Publications </h2>
+                        <div class="line line--horizontal line--heading" aria-hidden="true"></div>
+                        <!-- <p class="section__header-p">Here are a list of some of the projects that I have worked on.</p> -->
+                    </header>
+                    <!-- <div class="blog__grid">
+                        <article class="blog-post fade-up-start" data-gc="fade-up">
+                            <span class="blog-post__surface"></span>
+                            <div class="position-relative">
+                                <a class="blog-post__img-link" href="#blog">
+                                    <img loading="lazy" class="blog-post__img img-fluid lazyload"
+                                        data-src="./assets/blog/STL_MLD.png" alt="Banana over pink background">
+                                </a>
+                                <header class="blog-post__header">
+                                    <h3 class="blog-post__title heading-4">
+                                        <a href="#blog">STL_MLD: Optimization-Based Task and Motion Planner for Bipedal Robots</a>
+                                    </h3>
+                                    <div class="blog-post__author">
+                                        <div class="heading-5">
+                                            <time class="heading-5 blog-post__date">Motion Planning, Signal Temporal Logic, Model-Predictive Control, Bipedal Locomition, ROS, MuJoCo, Humanoid, Python, C++</time>
+                                        </div>
+                                        <div class="line line--horizontal line--post"></div>
+                                    </div>
+                                </header>
+                                <div class="blog-post__content">
+                                    <p>
+                                        Developed an optimization-based task and motion planner under signal temporal logic (STL) and Mixed-Integer 
+                                        Programming (MIP) for humanoid robots, and demonstrating its effectiveness on the MuJoCo simulator and hardware.
+                                    </p>
+                                </div>
+                            </div>
+                            <footer class="blog-post__footer">
+                                <a class="blog-post__read-more" href="#blog">
+                                    <span aria-hidden="true">Read more</span>
+                                    <span class="sr-only">Read more about: STL_MLD</span>
+                                </a>
+                            </footer>
+                        </article>
+                    </div> -->
+
+                    <div class="publications__list">
+                        <article class="publications fade-up-start" data-gc="fade-up">
+                            <p class="publications__text">
+                                M. S. Roddur, V. Ramavarapu, A. Bunkum, A. Huebner, R. Mineyev, N. McGranahan, S. Zaccaria, and M.
+                                El-Kebir, 
+                                <span class="blue-text publications__title">Characterizing the Solution Space of Migration Histories of Metastatic Cancers with MACH2</span>, 
+                                Proceedings of the International Conference on Research in Computational Molecular Biology,
+                                December 2024 (RECOMB 2025). 
+                                [<a href="https://www.biorxiv.org/content/10.1101/2024.11.19.624301v1.abstract" class="publications__pdf_link" target="_blank">PDF</a>]
+                            </p>
+                        </article>
+                        <article class="publications fade-up-start" data-gc="fade-up">
+                            <p class="publications__text">
+                                K. Shin, R. Mineyev and J. Kim, 
+                                <span class="blue-text publications__title">Autonomous Door-Opening with a Dual-Arm Robot</span>, 
+                                International Conference on Ubiquitous Robots(UR 2023).
+                                [<a href="https://ieeexplore.ieee.org/document/10597443" class="publications__pdf_link" target="_blank">PDF</a>]
+                            </p>
+                        </article>
+                        <article class="publications fade-up-start" data-gc="fade-up">
+                            <p class="publications__text">
+                                Sankalp Yamsani, Kevin Gim, Tyler Smithline, Richard Qiu, Chaerim Moon, Sungmin Kang, Roman Mineyev, Kyungseo Park, Yoon-Koo Kang, Seulbi An, SungHwan Ahn, Joohyung Kim, 
+                                <span class="blue-text publications__title">MOMO: Mobile Object Manipulation Operator</span>, 
+                                Demo Session, IEEE/RSJ International Conference on Intelligent Robots and Systems, October 2023 (IROS 2023).
+                                <!-- [<a href="https://www.biorxiv.org/content/10.1101/2024.11.19.624301v1.abstract" class="publications__pdf_link" target="_blank">PDF</a>] -->
+                            </p>
+                        </article>
+                        <article class="publications fade-up-start" data-gc="fade-up">
+                            <p class="publications__text">
+                                K. Shin, S. Yamsani, R. Mineyev,
+                                <span class="blue-text publications__title">Exploring the Capabilities of a General-Purpose Robotic Arm in Chess Gameplay</span>, 
+                                IEEE-RAS International Conference on Humanoid Robots, September 2023 (Humanoids 2023)
+                                [<a href="https://ieeexplore.ieee.org/document/10375209" class="publications__pdf_link" target="_blank">PDF</a>]
+                                [<a href="https://www.youtube.com/watch?v=GsLxrXSdOqA" class="publications__pdf_link" target="_blank">Video</a>]
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- END PUBLICATION SECTION -->
             <!-- ABOUT SECTION -->
             <section id="about" class="section" tabindex="-1">
                 <div class="container">
@@ -1038,12 +1124,12 @@
                         <div class="fade-up-start" data-gc="fade-up">
                             <form action="" method="POST" enctype="multipart/form-data" class="form-contact"
                                 id="contact-form">
-                                <span class="form-contact__surface"></span>
+                                <!-- <span class="form-contact__surface"></span>
                                 <div class="form-group">
                                     <div id="form-live-region" class="form__message" role="alert" aria-atomic="true"
                                         data-error-instruction="There were some issues with the form submission"></div>
-                                </div>
-                                <div class="form-group">
+                                </div> -->
+                                <!-- <div class="form-group">
                                     <p>All fields are required.</p>
                                 </div>
                                 <div class="form-contact__two-columns">
@@ -1076,7 +1162,7 @@
                                             <span></span>
                                         </span>
                                     </button>
-                                </div>
+                                </div> -->
                             </form>
                         </div>
                     </div>

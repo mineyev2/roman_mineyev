@@ -44,17 +44,22 @@ export default class A11yPreferencs {
 
     initSubscriptions() {
         this.siteState.getSiteTheme$().subscribe(theme => {
-            if (theme === 'dark') {
-                document.body.classList.remove(DEFAULT_THEME_CLASSNAME);
-                document.body.classList.add(DARK_THEME_CLASSNAME);
-                this.darkThemeControlEl.setAttribute('aria-checked', 'true');
-                this.siteState.updateStoragedA11yPreferences(A11Y_PREFERENCES_OBJ_KEYS.darkTheme, true);
-            } else if (theme === 'default') {
-                document.body.classList.remove(DARK_THEME_CLASSNAME);
-                document.body.classList.add(DEFAULT_THEME_CLASSNAME);
-                this.darkThemeControlEl.setAttribute('aria-checked', 'false');
-                this.siteState.updateStoragedA11yPreferences(A11Y_PREFERENCES_OBJ_KEYS.darkTheme, false);
-            }
+            // if (theme === 'dark') {
+            //     document.body.classList.remove(DEFAULT_THEME_CLASSNAME);
+            //     document.body.classList.add(DARK_THEME_CLASSNAME);
+            //     this.darkThemeControlEl.setAttribute('aria-checked', 'true');
+            //     this.siteState.updateStoragedA11yPreferences(A11Y_PREFERENCES_OBJ_KEYS.darkTheme, true);
+            // } else if (theme === 'default') {
+            //     document.body.classList.remove(DARK_THEME_CLASSNAME);
+            //     document.body.classList.add(DEFAULT_THEME_CLASSNAME);
+            //     this.darkThemeControlEl.setAttribute('aria-checked', 'false');
+            //     this.siteState.updateStoragedA11yPreferences(A11Y_PREFERENCES_OBJ_KEYS.darkTheme, false);
+            // }
+            // For now I want to just keep it light mode at the start
+            document.body.classList.remove(DARK_THEME_CLASSNAME);
+            document.body.classList.add(DEFAULT_THEME_CLASSNAME);
+            this.darkThemeControlEl.setAttribute('aria-checked', 'false');
+            this.siteState.updateStoragedA11yPreferences(A11Y_PREFERENCES_OBJ_KEYS.darkTheme, false);
         });
         
         this.siteState.getSiteAnimations$().subscribe(value => {

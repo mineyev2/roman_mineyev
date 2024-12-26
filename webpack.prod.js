@@ -35,6 +35,9 @@ module.exports = merge(common, {
                 {
                     from: "src/site.webmanifest",
                 },
+                {
+                    from: 'src/assets', to: 'assets'
+                }, // Added this pattern to copy assets
             ]
         }),
         new MiniCssExtractPlugin(),

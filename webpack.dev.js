@@ -13,6 +13,12 @@ module.exports = merge(common, {
         path: path.resolve(__dirname, "dist"),
         assetModuleFilename: "./assets/[name][ext]"
     },    
+    devServer: {
+        contentBase: path.join(__dirname, 'src'), // Serve static files from the 'src' directory
+        publicPath: '/',
+        port: 3000,
+        open: true,
+    },
     plugins: [
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
